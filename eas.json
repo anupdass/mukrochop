@@ -1,0 +1,22 @@
+{
+  "cli": {
+    "version": ">= 3.1.1"
+  },
+  "build": {
+    "production": {
+      "node": "16.13.0",
+      "releaseChannel": "prod"
+    },
+    "dev-client-apk": {
+      "extends": "production",
+      "developmentClient": true,
+      "distribution": "internal",
+      "releaseChannel": "staging"
+    },
+    "development-apk": {
+      "extends": "production",
+      "releaseChannel": "staging",
+      "distribution": "internal"
+    }
+  }
+}
