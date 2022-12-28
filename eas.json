@@ -1,7 +1,4 @@
 {
-  "cli": {
-    "version": ">= 3.1.1"
-  },
   "build": {
     "production": {
       "node": "16.13.0",
@@ -18,5 +15,9 @@
       "releaseChannel": "staging",
       "distribution": "internal"
     }
+  },
+  "cli": {
+    "version": ">= 0.52.0",
+    "requireCommit": true
   }
 }
